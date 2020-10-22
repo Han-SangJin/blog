@@ -14,10 +14,10 @@ public class BlogDao implements BlogDaoI {
 	@Override
 	public List<BlogVO> selectAllBlog() {
 		SqlSession sqlSession = MybatisUtil.getSession();
-		List<BlogVO> memberList =  sqlSession.selectList("blog.selectAllBlog");
-		 	
+		List<BlogVO> blogList =  sqlSession.selectList("blog.selectAllBlog");
+		System.out.println(blogList.get(0).getBgNo());
 		sqlSession.close();
-		return memberList;
+		return blogList;
 	}
-  
+	
 }

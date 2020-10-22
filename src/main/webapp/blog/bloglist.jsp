@@ -6,7 +6,7 @@
 <% 
 	List<BlogVO> memberList = (List<BlogVO>) request.getAttribute("blogList");
 %>   
-    
+     
 <!DOCTYPE html>
 <html>
 <head>

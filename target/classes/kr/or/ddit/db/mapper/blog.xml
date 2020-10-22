@@ -6,7 +6,7 @@
 
    <select id="selectAllBlog" resultType="BlogVO">
     SELECT * FROM blog 
-  </select>
+   </select>
   	
 </mapper> 
  
